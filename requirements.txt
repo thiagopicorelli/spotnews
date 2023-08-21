@@ -1,1 +1,1 @@
--e .[alldev]
+.[alldev]
