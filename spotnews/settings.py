@@ -149,10 +149,6 @@ STATICFILES_DIRS = [
     BASE_DIR / "static/img",
 ]
 
-USE_L10N = False
-
-DATE_INPUT_FORMATS = ['%d/%m/%Y']  
-
 STATIC_TEST_DIR = os.path.join(BASE_DIR, "tests")
 
 REST_FRAMEWORK = {

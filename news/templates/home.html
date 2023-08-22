@@ -20,7 +20,7 @@
       <div class=news-card>
         <h2 class="news-title">{{ item.title }}</h2>
         <img src="{% static item.image %}">
-        <span class="news-date">{{ item.created_at }}</span>
+        <span class="news-date">{{ item.created_at|date:"d/m/Y" }}</span>
       </div>
     {% endfor %}
     </div>
