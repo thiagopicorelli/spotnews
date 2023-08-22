@@ -15,13 +15,15 @@
       </ul>
     </header>
 
+    <div class="news-container">
     {% for item in news %}
-      <div>
+      <div class=news-card>
         <h2 class="news-title">{{ item.title }}</h2>
         <img src="{% static item.image %}">
         <span class="news-date">{{ item.created_at }}</span>
       </div>
     {% endfor %}
+    </div>
 
 </body>
 </html>
