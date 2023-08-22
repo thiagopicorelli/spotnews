@@ -9,6 +9,19 @@
     <title>Página Inicial</title>
 </head>
 <body>
-    <h1> Meu prime template usando Django! </h1>
+    <header class="header"> 
+      <ul class="header-links">
+        <a href="/">Home</a>
+      </ul>
+    </header>
+
+    {% for item in news %}
+      <div>
+        <h2 class="news-title">{{ item.title }}</h2>
+        <img src="{% static item.image %}">
+        <span class="news-date">{{ item.created_at }}</span>
+      </div>
+    {% endfor %}
+
 </body>
 </html>
