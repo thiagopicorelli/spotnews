@@ -25,7 +25,7 @@ def categories_form(request):
 def news_form(request):
     form = CreateNewsForm()
     if request.method == "POST":
-        form = CreateNewsForm(request.POST)
+        form = CreateNewsForm(request.POST, request.FILES)
         if form.is_valid():
             cleanForm = form.cleaned_data
             news = News(
