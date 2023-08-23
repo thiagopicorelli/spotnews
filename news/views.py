@@ -21,4 +21,7 @@ def categories_form(request):
             return redirect("home-page")
     context = {"form": form}
     return render(request, 'categories_form.html', context)
+
+def news_form(request):
+    return render(request, "news_form.html")
     

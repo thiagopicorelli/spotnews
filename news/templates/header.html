@@ -1,6 +1,7 @@
 <header class="header"> 
   <ul class="header-links">
-    <a href="/">Home</a>
-    <a href="/categories/">Cadastrar Categorias</a>
+    <a href="{% url 'home-page' %}">Home</a>
+    <a href="{% url 'categories-form' %}">Cadastrar Categorias</a>
+    <a href="{% url 'news-form' %}">Cadastrar Notícias</a>
   </ul>
 </header>

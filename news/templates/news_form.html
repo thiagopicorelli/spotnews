@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário para Nova Notícia</title>
+</head>
+<body>
+  {% include "header.html" %}
+  <form method="post" action="{% url 'news-form' %}" class="news-container">
+
+    <button type="submit">Salvar</button>
+  </form>
+</body>
+</html>
