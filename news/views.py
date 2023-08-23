@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from news.models import News, Categories
-from news.forms import CreateCategoryForm
+from news.forms import CreateCategoryForm, CreateNewsForm
 
 
 def index(request):
@@ -23,5 +23,7 @@ def categories_form(request):
     return render(request, 'categories_form.html', context)
 
 def news_form(request):
-    return render(request, "news_form.html")
+    form = CreateNewsForm()
+    context = {"form": form}
+    return render(request, "news_form.html", context)
     

@@ -9,7 +9,7 @@
 </head>
 <body>
   {% include "header.html" %}
-  <form method="post" action="{% url 'categories-form' %}" class="news-container">
+  <form method="post" action="{% url 'categories-form' %}" class="categories-form">
     {% csrf_token %}
     {{form}}
     <button type="submit">Salvar</button>
