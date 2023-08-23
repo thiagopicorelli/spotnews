@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -8,8 +9,10 @@
 </head>
 <body>
   {% include "header.html" %}
-  <div class="news-container">
-    
-  </div>
+  <form method="post" action="{% url 'categories-form' %}" class="news-container">
+    {% csrf_token %}
+    {{form}}
+    <button type="submit">Salvar</button>
+  </form>
 </body>
 </html>
