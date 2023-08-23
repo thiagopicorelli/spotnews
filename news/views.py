@@ -7,4 +7,6 @@ def index(request):
     return render(request, 'home.html', context)
 
 def news_details(request, id):
-    return render(request, 'news_details.html')
+    context = {"news": News.objects.get(id=id)}
+    context["news"].categoriesList = context["news"].categories.all()
+    return render(request, 'news_details.html', context)

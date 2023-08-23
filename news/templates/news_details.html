@@ -1,16 +1,23 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Detalhes da Notícia</title>
 </head>
 <body>
-  <header class="header"> 
-    <ul class="header-links">
-      <a href="/">Home</a>
-    </ul>
-  </header>
-  <h1>TESTE</h1>
+  {% include "header.html" %}
+  <div class="news-container">
+    <h1 class="news-title">{{ news.title }}</h1>
+    <img src="{% static news.image %}">
+    <p class="news-content">{{ news.content }}</p>
+    {% for cat in news.categoriesList %}
+      <span class="news-categories">{{ cat.name }}</span>
+    {% endfor %}
+    <span class="news-author">{{ news.author }}</span>
+    <span class="news-date">{{ news.created_at|date:"d/m/Y" }}</span>
+  </div>
 </body>
 </html>
