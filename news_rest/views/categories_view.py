@@ -1,6 +1,6 @@
 from rest_framework import viewsets
 from news.models import Categories
-from news_rest.serializers.categories_serializer import CategoriesSerializer
+from news_rest.serializers import CategoriesSerializer
 
 
 class CategoriesViewSet(viewsets.ModelViewSet):

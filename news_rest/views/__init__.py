@@ -1,0 +1,2 @@
+from news_rest.views.categories_view import CategoriesViewSet
+from news_rest.views.user_view import UsersViewSet
