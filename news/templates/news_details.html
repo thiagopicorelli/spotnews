@@ -9,9 +9,9 @@
 </head>
 <body>
   {% include "header.html" %}
-  <div class="news-container">
+  <div class="news-detail">
     <h1 class="news-title">{{ news.title }}</h1>
-    <img src="{% static news.image %}">
+    <img src="{% static news.image.url %}">
     <p class="news-content">{{ news.content }}</p>
     {% for cat in news.categoriesList %}
       <span class="news-categories">{{ cat.name }}</span>

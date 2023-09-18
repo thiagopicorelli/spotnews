@@ -68,9 +68,10 @@ nav {
     flex-direction: column;
     height: 200px;
     justify-content: space-around;
-    margin: 10px 0;
+    margin: 20px 0;
     text-align: center;
     width: 27%;
+    height: 30%;
 }
 
 .news-card:hover {
