@@ -1,6 +1,6 @@
 # SpotNews
 
-![spotnew](https://github.com/thiagopicorelli/spotnews/assets/60528610/68f25ab3-091a-45db-ba32-6894b952974b)
+![spotnew](https://github.com/thiagopicorelli/spotnews/assets/60528610/ba944310-4c32-474c-8d5a-7c157e2c559d)
 
 Aplicação feita no curso da Trybe do backend e frontend de um site de notícias, usando o framework **Django**, que mostra as notícias de um banco de dados **MySQL** dockerizado feito pela Trybe, com a possibilidade de criar novas notícias e categorias.
 
